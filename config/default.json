@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://coura12:coura12@contactagenda.yx62d.mongodb.net/prosperia?retryWrites=true&w=majority",
+    "jwtSecret":"secret"
+}
