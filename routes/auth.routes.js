@@ -40,13 +40,13 @@ async (req,resp)=>{
         let user = await User.findOne({email});
 
         if(!user){
-            return resp.status(400).json({msg:'invalid email or password'})
+            return resp.status(400).json({msg:'Invalid email or password'})
         }
 
         const isMatch = await bcrypt.compare(password, user.password)
 
         if(!isMatch) {
-            return resp.status(400).json({ msg:'invalid email or password'})
+            return resp.status(400).json({ msg:'Invalid email or password'})
         }
 
         const payload = {
